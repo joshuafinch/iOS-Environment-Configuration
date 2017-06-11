@@ -1,0 +1,27 @@
+//
+//  Config.xcconfig
+//  Sample
+//
+//  Created by Joshua Finch on 11/06/2017.
+//  Copyright © 2017 Joshua Finch. All rights reserved.
+//
+
+// MARK: Common Properties
+
+LD_RUNPATH_SEARCH_PATHS = $(inherited) @executable_path/Frameworks
+INFOPLIST_FILE = Sample/Info.plist
+PRODUCT_BUNDLE_IDENTIFIER = codes.joshua.Sample
+PRODUCT_NAME = $(TARGET_NAME)
+DEVELOPMENT_TEAM = MV2JZMSBKV
+ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon
+SWIFT_VERSION = 3.0
+
+// MARK: Per-Configuration Properties
+
+OTHER_SWIFT_FLAGS_Debug = $(inherited)
+OTHER_SWIFT_FLAGS_Release = $(inherited)
+OTHER_SWIFT_FLAGS_DebugDev = $(inherited) "-D" "COCOAPODS" -D DEVELOPMENT
+OTHER_SWIFT_FLAGS_ReleaseDev = $(inherited) "-D" "COCOAPODS" -D DEVELOPMENT
+OTHER_SWIFT_FLAGS_DebugStaging = $(inherited) "-D" "COCOAPODS" -D STAGING
+OTHER_SWIFT_FLAGS_ReleaseStaging = $(inherited) "-D" "COCOAPODS" -D STAGING
+OTHER_SWIFT_FLAGS = $(OTHER_SWIFT_FLAGS_$(CONFIGURATION))
