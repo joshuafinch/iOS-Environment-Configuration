@@ -43,6 +43,6 @@ Alternatively, you can go into each of the schemes, and change the configuration
 
 This project was created as a aid for the following related blog articles:
 
-- [Handling multiple environments in iOS](https://joshua.codes/blog/app-with-multiple-environments/)
-- [Multiple configurations](https://joshua.codes/blog/multiple-configurations/)
-- [Manage your build settings with xcconfigs](https://joshua.codes/blog/manage-your-build-settings-with-xcconfigs/)
+- [Handling multiple environments in iOS](https://joshua.codes/handling-multiple-environments-in-ios/)
+- [Multiple configurations](https://joshua.codes/multiple-configurations/)
+- [Manage your build settings with xcconfigs](https://joshua.codes/manage-your-build-settings-with-xcconfigs/)
